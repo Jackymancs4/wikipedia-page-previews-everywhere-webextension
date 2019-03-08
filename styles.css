@@ -1,0 +1,94 @@
+span.wikie_everywhere {
+  all: initial !important;
+  visibility: inherit !important;
+  opacity: inherit !important;
+  pointer-events: inherit !important;
+  margin: 0 4px !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+  font-family: "Times New Roman" !important;
+  color: #222222 !important;
+  background: white !important;
+  border: 1px solid !important;
+  border-color: #222222 !important;
+  border-radius: 2px !important;
+  font-size: 0.95em !important;
+  padding: 1px 2px !important;
+  line-height: 0.95 !important;
+}
+
+#wikie_info_container {
+  all: initial;
+  font-family: sans-serif;
+  background-color: white;
+  padding: 9px;
+  font-size: 14px;
+  max-width: 320px;
+  min-width: 150px;
+  max-height: 500px;
+  min-height: 15px;
+  position: absolute;
+  transition-property: visibility, opacity;
+  transition-duration: 0s, 0.4s;
+  z-index: 1000009;
+  word-break: break-word;
+  color: #222222;
+  text-decoration: none;
+  border-radius: 2px;
+  border: 1px solid #c8ccd1;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0 30px 90px -20px rgba(0, 0, 0, 0.3), 0 0 1px #a2a9b1;
+  box-shadow: 0 30px 90px -20px rgba(0, 0, 0, 0.3), 0 0 1px #a2a9b1;
+  line-height: 20px;
+  border-radius: 2px;
+}
+
+#wikie_info_image {
+  max-height: 300px;
+  max-width: 100%;
+  padding-bottom: 9px;
+}
+
+#wikie_info_image>img {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#wikie_info_container.wikie_info_container_hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: 0.4s, 0s;
+  transition-delay: 0s, 0.4s;
+}
+
+#wikie_info_container a {
+  color: #222222 !important;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+#wikie_info_container a:hover {
+  color: #222222;
+  background-color: #454957;
+}
+
+#wikie_info_container_header {
+  color: #222222;
+  font-size: 0.95em;
+  padding: 2px;
+  display: inline-block;
+}
+
+#wikie_info_container_header:hover {
+  background-color: transparent !important;
+}
+
+.wikie_info_elem {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

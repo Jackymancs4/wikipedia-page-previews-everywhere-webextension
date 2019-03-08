@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+
+    "name": "Wikipedia Page Previews Everywhere",
+    "version": "1.0.0",
+    "description": "Wikipedia Page Previews",
+    "homepage_url": "https://www.github.com",
+    "icons": {
+        "128": "icons/icon_128.png"
+    },
+    "content_scripts": [{
+        "css": [
+            "styles.css"
+        ],
+        "js": [
+            "content.js"
+        ],
+        "run_at": "document_end",
+        "matches": ["<all_urls>"],
+        "exclude_matches": [
+            "https://*.wikipedia.org/*",
+            "http://localhost/*"
+        ]
+    }],
+
+    "permissions": [
+        "tabs",
+        "<all_urls>"
+    ]
+}
